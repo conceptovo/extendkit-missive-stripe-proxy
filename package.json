@@ -1,7 +1,9 @@
 {
-	"name": "extendkit-missive-proxy",
+	"name": "extendkit-missive-stripe-proxy",
+	"description": "Cloudflare Worker as a proxy for Stripe.",
 	"version": "0.0.0",
 	"private": true,
+	"main": "src/index.ts",
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
