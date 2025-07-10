@@ -59,6 +59,10 @@ export default {
 			});
 		}
 
+		if (!env.SECURITY_HEADER_NAME || !env.SECURITY_HEADER_VALUE) {
+			return cors(new Response("SECURITY_HEADER_NAME or SECURITY_HEADER_VALUE not configured", { status: 500 }));
+		}
+
 		if (!env.STRIPE_API_KEY) {
 			return cors(new Response("STRIPE_API_KEY not configured", { status: 500 }));
 		}
