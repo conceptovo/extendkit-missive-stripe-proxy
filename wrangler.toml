@@ -1,0 +1,8 @@
+name = "extendkit-missive-stripe-proxy"
+main = "src/index.ts"
+compatibility_date = "2025-07-05"
+
+[vars]
+STRIPE_API_KEY = "rk_..."
+SECURITY_HEADER_NAME = "X-Custom-Auth-Check"
+SECURITY_HEADER_VALUE = "a-very-secret-value-that-is-hard-to-guess"
